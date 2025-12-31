@@ -13,5 +13,5 @@
   - name: install apache
     ansible.builtin.apt:
       name: apache2
-      status: latest
+      state: latest
     when: ansible_facts["distribution"] == "Ubuntu"
